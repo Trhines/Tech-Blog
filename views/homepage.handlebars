@@ -1,28 +1,4 @@
-<link rel="stylesheet" href=".\style\style.css">
-<nav class="navbar" role="navigation" aria-label="main navigation">
 
-  <div id="nav" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
-        Home
-      </a>
-
-      <a class="navbar-item">
-        Dashboard
-      </a>
-    </div>
-
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button">
-            Log out
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
 
 <section class="section">
 
@@ -31,107 +7,9 @@
 
 
   <div class="container">
-
-    <div class="tile is-ancestor">
-
-      <div class="tile is-vertical">
-
-        <div class="card">
-          <p class="card-header-title">This is about the tech</p>
-          <div class="card-content">
-            <div class="content">
-              Really the tech here is the important thing.
-              To be honest I'm not sure how this will work.
-            </div>
-          </div>
-          <footer class="card-footer">
-            <a href="#" class="card-footer-item">View Comments</a>
-          </footer>
-        </div>
-
-        <div class="card">
-          <p class="card-header-title">Title</p>
-          <div class="card-content">
-            <div class="content">
-              latin text goes here
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <p class="card-header-title">Title</p>
-          <div class="card-content">
-            <div class="content">
-              latin text goes here
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="tile is-vertical">
-
-        <div class="card">
-          <p class="card-header-title">Title</p>
-          <div class="card-content">
-            <div class="content">
-              latin text goes here
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <p class="card-header-title">Title</p>
-          <div class="card-content">
-            <div class="content">
-              latin text goes here
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <p class="card-header-title">Title</p>
-          <div class="card-content">
-            <div class="content">
-              latin text goes here
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="tile is-vertical">
-
-        <div class="card">
-          <p class="card-header-title">Title</p>
-          <div class="card-content">
-            <div class="content">
-              latin text goes here
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <p class="card-header-title">Title</p>
-          <div class="card-content">
-            <div class="content">
-              latin text goes here
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <p class="card-header-title">Title</p>
-          <div class="card-content">
-            <div class="content">
-              latin text goes here
-            </div>
-          </div>
-        </div>
-
-      </div>
-  
-    </div>
-
+    {{#each posts}}
+    {{> card}}
+    {{/each}}
   </div>
 </section>
+<script src="./js/card.js"></script>

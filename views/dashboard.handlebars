@@ -1,0 +1,22 @@
+
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div id="dashNav" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/newPost">
+        Create new post +
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <h1 class="title">Dashboard</h1>
+  <div class="container">
+    {{#each posts}}
+    {{> editCard}}
+    {{/each}}
+  </div>
+</section>
+<script src="./js/card.js"></script>
+<script src="./js/editPost.js"></script>

@@ -3,12 +3,40 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Tech Blog</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href=".\style\style.css">
   </head>
   <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+
+      <div id="nav" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+
+          <a class="navbar-item" href="/dashboard">
+            Dashboard
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          {{#if logged_in}}
+              <a class="navbar-item" id="logOutBtn">
+                Log out
+              </a>
+          {{else}}
+              <a class="navbar-item" href="/login">
+                Log in
+              </a>
+              {{/if}}
+        </div>
+      </div>
+    </nav>
 
     {{{ body }}}
 
+  <script src="./js/main.js"></script>
   </body>
 </html>

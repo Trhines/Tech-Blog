@@ -9,9 +9,9 @@
     padding: 0px;
 }
 
-/* .navbar-item{
-    color: var(--white)
-} */
+html{
+    background-color: var(--white);
+}
 
 body{
     background-color: var(--white);
@@ -22,10 +22,15 @@ body{
     background-color: var(--white);
 }
 
-.button{
-    border: none;
-    color: var(--black);
+#dashNav {
+    /* border-bottom: 2px solid var(--grey); */
     background-color: var(--white);
+}
+
+.button{
+    color: var(--black);
+    background-color: white;
+    margin-top:1rem;
 }
 
 .section{
@@ -39,6 +44,7 @@ body{
 }
 
 .card{
+    width: 288px;
     margin: 1rem;
     background-color: white;
     color: var(--black);
@@ -50,8 +56,81 @@ body{
     padding-bottom: 0px;
 }
 
-.content{
-    color: var(--grey)
+.container{
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.postForm{
+    display: block;
+    margin:auto;
+    justify-content: center;
+}
 
+.content{
+    color: var(--grey);
+    height: 75px;
+    text-align: center;
+}
+
+.card-footer-item{
+    height: 48px;
+}
+
+.card.login{
+    min-width: 45%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.button.login{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#login-signup{
+    padding-top: .75rem;
+}
+
+.article{
+    padding: 2rem;
+    background-color: white;
+    width:75%;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    border-radius: .25rem;
+}
+
+.comment{
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    width:75%;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    border-radius: .25rem;
+}
+
+.commentSection{
+    justify-content: left;
+    width: 75%;
+}
+
+.comments{
+    width:fit-content;
+    min-width: 25%;
+    justify-content: left;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    border-radius: .25rem;
+}
+
+title{
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div id="dashNav" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/dashboard">
+        View posts
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+    <div class="postForm">
+
+        <div class="field">
+        <label class="label">Title</label>
+            <div class="control">
+                <input id="title" class="input" type="text" placeholder="Maximum of 14 characters" maxLength="14" value={{post.title}}>
+            </div>
+        </div>
+
+        <div class="field">
+        <label class="label">Description</label>
+            <div class="control">
+                <textarea id="description" class="textarea" placeholder="Maximum of 70 Characters" rows="2" maxlength="70">{{post.description}}</textarea>
+            </div>
+        </div>
+
+
+        <div class="field">
+        <label class="label">Article</label>
+            <div class="control">
+                <textarea id="article" class="textarea" placeholder="Textarea" rows="10">{{post.content}}</textarea>
+            </div>
+        </div>
+
+        <div class="field is-grouped">
+            <div class="control">
+                <a class="button" id="updatePost" postId={{post.post_id}} >Update</a>
+            </div>
+            <div class="control">
+                <a class="button" href="/dashboard">Cancel</a>
+            </div>
+        </div>
+    
+    </div>
+</section>
+<script src="./js/updatePost.js"></script>

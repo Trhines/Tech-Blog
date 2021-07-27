@@ -1,5 +1,9 @@
-module.expeorts = {
-    eatCookie: () => {
-        console.log('yummers')
+const auth = (req, res, next) => {
+    if(!req.session.logged_in){
+        res.redirect('/login')
+    } else {
+        next()
     }
 }
+
+module.exports = auth

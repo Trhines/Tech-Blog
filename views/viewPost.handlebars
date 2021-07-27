@@ -1,0 +1,38 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div id="dashNav" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/dashboard">
+        View posts
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <div class="article">
+            <p>By {{data.user.email}}</p>
+            <h1 class="title">{{data.title}}</h1>
+            <h4 class="subtitle">{{data.description}}</h4>
+            <p class="content">{{data.content}}</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="comment">
+            <div class="field">
+                <div class="control">
+                <textarea class="textarea" placeholder="New comment" rows="1" id="comment"></textarea>
+                </div>
+            <button class="button" id="post">Post</button>
+            </div>
+        </div>
+        {{#each data.comments}}
+        {{> comment}}
+        {{/each}}
+    </div>
+
+    </div>
+</section>
+<script src="./js/viewPost.js"></script>
